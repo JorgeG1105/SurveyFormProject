@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jorge Goris Survey Form</title>
+	<!--Needed Meta Tags-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Jorge Goris">
+	<meta name="description" content="One of FreeCodeCamps Projects, A survey form.">
+	<meta name="keywords" content="HTML, CSS, JavaScript, Responsive, Design">
+	<!--My Custom Styles-->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<!--Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Ceviche+One|Freckle+Face" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<h1 id="title">Tacopalooza Guest Survey</h1>
+		<div class="innerForm">
+			<h2 id="description">How can we make Tacopalooza better for you?</h2>
+			<p>* Are required fields.</p>
+			<form id="survey-form">
+				<div class="name-section">
+					<label id="name-label" for="name">* Name: </label>
+					<input id="name" autofocus type="text" name="name" class="input-field" placeholder="Enter your name" required>
+				</div>
+				<div class="email-section">
+					<label id="email-label" for="email">* Email: </label>
+					<input id="email" autofocus type="email" name="email" class="input-field" placeholder="Enter your email" required>
+				</div>
+				<div class="age-section">
+					<label id="number-label" for="age">Age: </label>
+					<input id="number" autofocus type="number" name="age" class="input-field" placeholder="How old are you?" required min="16" max="85">
+				</div>
+				<div class="dropdown-section">
+					<label for="how-often">How often do you dine with us?</label>
+					<select id="dropdown" name="how-often">
+						<option disabled value>Select an option</option>
+						<option value="daily">Daily</option>
+						<option value="weekly">Weekly</option>
+						<option value="monthly">Monthly</option>
+						<option value="onceInThreeMonths">Once in three months</option>
+						<option value="firstTime">First time</option>
+					</select>
+				</div>
+				<div class="radio-section">
+					<label for="how-likely">How likely are you to reccommend Tacopalooza to a friend?</label>
+					<ul id="how-likely">
+						<li class="radio">
+							<label>
+								For sure!
+								<input name="radio-buttons" value="1" type="radio" class="userRatings">
+							</label>
+						</li>
+						<li class="radio">
+							<label>
+								ehhh maybe.
+								<input name="radio-buttons" value="2" type="radio" class="userRatings">
+							</label>
+						</li>
+						<li class="radio">
+							<label>
+								This place stinks!
+								<input name="radio-buttons" value="3" type="radio" class="userRatings">
+							</label>
+						</li>
+					</ul>
+				</div>
+				<div class="checkbox-section">
+					<label for="sauces">Just curious, How many of our signature sauces have you tried?</label>
+					<ul id="sauces">
+						<li class="checkbox">
+							<label>
+								<input type="checkbox" name="tried" class="sauce-tried" value="1">
+								Super Mango-Habanero
+							</label>
+						</li>
+						<li class="checkbox">
+							<label>
+								<input type="checkbox" name="tried" class="sauce-tried" value="2">
+								El Diablo La Muerte
+							</label>
+						</li>
+						<li class="checkbox">
+							<label>
+								<input type="checkbox" name="tried" class="sauce-tried" value="3">
+								Guac attack
+							</label>
+						</li>
+						<li class="checkbox">
+							<label>
+								<input type="checkbox" name="tried" class="sauce-tried" value="4">
+								Tex-Mex Drizzle
+							</label>
+						</li>
+						<li class="checkbox">
+							<label>
+								<input type="checkbox" name="tried" class="sauce-tried" value="5">
+								Famous Hoach Sauce
+							</label>
+						</li>
+						<li class="checkbox">
+							<label>
+								<input type="checkbox" name="tried" class="sauce-tried" value="6">
+								Coach Bouakt Pour Over
+							</label>
+						</li>
+					</ul>
+				</div>
+				<p>Any comments or suggestions?</p>
+				<div class="textarea">
+					<textarea id="comments" class="input-field" name="comments" placeholder="Enter your comments here"></textarea>
+				</div>
+				<button id="submit" type="submit">Thanks!</button>
+			</form>
+		</div>
+	</div><!-- end container-->
+</body>
+</html>

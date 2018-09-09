@@ -1,0 +1,127 @@
+/*--------------Global Styles----------------------*/
+header {
+	text-align: center;
+}
+
+body {
+	background-color: #EC2D01;
+	background-image: url(taco.png);
+	background-size: 80px 80px;
+}
+
+.container {
+	text-align: center;
+}
+
+#title {
+	font-family: 'Freckle Face', cursive;
+	font-size: 50px;
+}
+
+.innerForm {
+	background-color: #fff;
+	border-radius: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	width: 75%;
+	max-width: 900px;
+	padding: 20px;
+	font-family: 'Ceviche One', cursive;
+	font-size: 20px;
+	border: 2px solid black;
+}
+
+#description {
+	font-family: 'Freckle Face', cursive;
+	font-size: 25px;
+}
+
+
+/*----------------------Section Styling-----------------------*/
+
+.name-section input, .email-section input, .age-section input {
+	margin: 10px;
+	height: 20px;
+	width: 280px;
+	padding: 7px;
+	border-radius: 10px;
+	border: 2px solid #EC2D01;
+}
+
+.dropdown-section {
+	margin: 10px;
+}
+
+.dropdown-section select {
+	height: 35px;
+	width: 280px;
+	padding: 5px;
+	border-radius: 10px;
+	border: 2px solid #EC2D01;
+	margin: 10px;
+}
+
+/*-----------------------------------Radio Button section -----------------------------------------*/
+
+.radio {
+	list-style-type: none;
+	margin: 10px 0;
+}
+
+/*-----------------------------------------------Check-box section--------------------------------------*/
+
+.checkbox {
+	list-style-type: none;
+	margin: 10px 0;
+}
+
+/*--------------------------------------------Text Area section----------------------------------*/
+.textarea {
+	margin: 10px;
+}
+
+#comments {
+	border: 3px solid #EC2D01;
+	width: 400px;
+	height: 120px;
+	padding: 10px;
+	border-radius: 5px;
+	/*font-family: 'Ceviche One', cursive;
+	font-size: 20px;*/
+}
+
+#submit {
+	font-family: 'Ceviche One', cursive;
+	font-size: 20px;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: white;
+	border: 2px solid #EC2D01;
+	cursor: pointer;
+}
+
+/*--------------------------------------Media Queries-----------------------------------------*/
+ @media screen and (min-width: 375px) and (max-width: 812px) {
+ 	.innerForm {
+ 		width: auto;
+ 	}
+
+ 	#comments {
+ 		width: 250px;
+ 	}
+
+ 	#submit {
+ 		padding: 20px 100px;
+ 		margin-top: 15px;
+ 	}
+ }
+
+ @media screen and (max-width: 812px) and (orientation: landscape) {
+ 	#comments {
+ 		width: 500px;
+ 	}
+
+ 	#submit {
+ 		padding: 20px 200px;
+ 	}
+ }
